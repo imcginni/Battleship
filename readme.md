@@ -19,14 +19,12 @@ bdd
     
     block BattleshipSystem {
         block BattleshipServer {
-            description = "Handles all game logic"
             +port 65432
             +handle_client()
             +send_to_all()
         }
         
         block BattleshipClient {
-            description = "GUI and Network Client"
             +connect_to_server()
             +listen_to_server()
             +handle_server_message()
@@ -34,7 +32,6 @@ bdd
         }
         
         block CommonLogic {
-            description = "Shared data structures"
             +PlayerBoard
             +SHIP_SIZES
             +draw_grid_lines()
