@@ -1,0 +1,5 @@
+Directions to use:
+1) run 'server.py' ON ONE MACHINE, will return IP needed to connect other clients.
+2) create outbound program rule for python interpreter on all client machines.
+3) create inbound port rule for port 65432 on machine running 'server.py'
+4) when client runs, select PvP and enter IP of host machine.
